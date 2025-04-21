@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+
+}
+
+.left {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.right {
+    width: 50%;
+    background-color: #8fa69c;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    margin-left: 20px;
+
+}
+
+
+
+.topnav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* Sağ ve sol öğeleri yayar */
+    align-items: center;
+    gap: 5px;
+    /* Navbar öğeleri arasında boşluk bırakır */
+}
+
+.topnav a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    font-family: "Cinzel", serif;
+    font-size: 18px;
+}
+
+.topnav a.split {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#name {
+    font-family: "Cinzel", serif;
+    font-size: 80px;
+    margin-top: 90px;
+    font-style: bold;
+    justify-content: flex-start;
+    margin-left: 120px;
+
+}
+
+#meslek {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    margin-top: 5px;
+    font-weight: lighter;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 120px;
+
+}
+
+.content2 {
+    margin-top: 50px;
+}
+
+.bilgi {
+    font-family: normal;
+    text-align: left;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-left: 125px;
+    color: black;
+    font-weight: 100;
+}
+
+.social-links {
+    display: flex;
+    align-items: left;
+    /* Yatayda hizalama */
+    margin-left: 110px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-top: 22px;
+    font-weight: lighter;
+}
+
+.social-link {
+    text-decoration: none;
+    /* Bağlantı altındaki çizgiyi kaldırır */
+    color: black;
+    /* Bağlantı rengi siyah */
+    margin: 0 10px;
+    /* Bağlantılar arasına boşluk */
+    position: relative;
+}
+
+.social-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: black;
+    /* Alt çizgi rengi */
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+    /* Çizgi ile metin arasındaki mesafe */
+    left: 0;
+}
+
+.separator {
+    font-size: 24px;
+    margin: 0 10px;
+    color: black;
+}
+
+.container2 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 200px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: "Cinzel", serif;
+}
+
+#cv-section {
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+
+.hakkında {
+    margin-top: 200px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 110px;
+    margin-top: 50px;
+    font-family: "Cinzel", serif;
+    gap: 5px;
+    font-size: 36px;
+    font-weight: lighter;
+    letter-spacing: 15px;
+}
+
+.hakkında::after {
+    content: "";
+    display: inline-block;
+    width: 350px;
+    height: 2px;
+    background-color: black;
+    margin-left: 10px;
+
+}
+
+.hakkında-metin {
+    margin-left: 110px;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+
+}
+
+.uzmanlik-alani {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 110px;
+    margin-top: 150px;
+    font-family: "Cinzel", serif;
+    gap: 5px;
+    font-size: 36px;
+    font-weight: lighter;
+    letter-spacing: 15px;
+
+}
+
+.uzmanlik-alani::after {
+    content: "";
+    display: inline-block;
+    width: 250px;
+    height: 2px;
+    background-color: black;
+    margin-left: 10px;
+
+}
+
+.uzmanlik-alani-metin {
+    margin-left: 110px;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+
+}
+
+.container7 {
+    margin-top: 100px;
+}
+
+.baslık1 {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 110px;
+    margin-top: 150px;
+    font-family: "Cinzel", serif;
+    gap: 5px;
+    font-size: 36px;
+    font-weight: lighter;
+    letter-spacing: 15px;
+
+}
+
+.baslık1::after {
+    content: "";
+    display: inline-block;
+    width: 250px;
+    height: 2px;
+    background-color: black;
+    margin-left: 10px;
+
+
+}
+
+.bilgi1 {
+    margin-left: 110px;
+    margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.bilgi2 {
+    margin-left: 110px;
+    margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+    font-style: italic;
+
+}
+
+.sertifika {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    list-style-type: none;
+
+
+}
+
+.container8 {
+    margin-top: 100px;
+
+}
+
+.container4 {
+    margin-top: 100px;
+}
+
+.container5 {
+    margin-top: 100px;
+}
+
+.container6 {
+    margin-top: 100px;
+}
+
+.container3 {
+    margin-top: 150px;
+}
+
+.iletisim {
+
+    font-family: normal;
+    text-align: left;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 110px;
+    color: black;
+    font-weight: 100;
+}
+
+.iletisim2 {
+    margin-left: 110px;
+    margin-top: 150px;
+    font-family: "Open Sans", sans-serif;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: black;
+    list-style-type: none;
+    letter-spacing: 3px;
+}
+
+.resim {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    margin-left: 250px;
+}
+
+.resim img {
+    width: 450px;
+    height: auto;
+}
+
+.cv-indir {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cv-indir:hover {
+    background-color: white;
+    color: black;
+}
